@@ -1,10 +1,13 @@
 # finstc
 
 Решение тестового задания. \
+Запуск сервера - `python src/api.py`.\
+В файле `test.py` лежат примеры запросов.
+
 Список эндпоинтов:
 - `/car/<int:car_id>`
 - `/dealer/<int:dealer_id>`
-- `/dealer/<int:dealer_id>/car/<int:car_id>`\
+- `/dealer/<int:dealer_id>/car/<int:car_id>`
 
 Запросы:
 - GET `/car/<int:car_id>` - получить предложения всех диллеров по данному автомобилю:
