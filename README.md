@@ -7,7 +7,7 @@
 - `/dealer/<int:dealer_id>/car/<int:car_id>`\
 
 Запросы:
-- GET `/car/<int:car_id>`:
+- GET `/car/<int:car_id>` - получить предложения всех диллеров по данному автомобилю:
     - Данные: -
     - Возвращаемое значение: 
     ```
@@ -20,7 +20,7 @@
         }]
   }
     ```
-- POST `/car/add`:
+- POST `/car/add` - создать новый автомобиль:
     - Данные: 
     ```
   {
@@ -34,7 +34,7 @@
     "name": string
   }
     ```
-- DELETE `/car/<int:car_id>`:
+- DELETE `/car/<int:car_id>` - удалить автомобиль (вместе со всеми предложениями по данному автомобилю):
     - Данные: -
 
     - Возвращаемое значение: 
@@ -43,7 +43,7 @@
     "success": boolean
   }
     ```
-- PATCH `/car/<int:car_id>`:
+- PATCH `/car/<int:car_id>` - изменить название автомобиля:
     - Данные: 
     ```
   {
@@ -57,7 +57,7 @@
   }
     ```
 
-- GET `/dealer/<int:dealer_id>`:
+- GET `/dealer/<int:dealer_id>` - получить все предложения диллера:
     - Данные: -
     - Возвращаемое значение: 
     ```
@@ -70,7 +70,7 @@
         }]
   }
     ```
-- POST `/dealer/add`:
+- POST `/dealer/add` - создать нового диллера:
     - Данные: 
     ```
   {
@@ -84,7 +84,7 @@
     "name": string
   }
     ```
-- DELETE `/dealer/<int:dealer_id>`:
+- DELETE `/dealer/<int:dealer_id>` - удалить диллера (вместе со всеми его предложениями):
     - Данные: -
 
     - Возвращаемое значение: 
@@ -93,7 +93,7 @@
     "success": boolean
   }
     ```
-- PATCH `/dealer/<int:dealer_id>`:
+- PATCH `/dealer/<int:dealer_id>` - изменить название диллера:
     - Данные: 
     ```
   {
@@ -107,7 +107,7 @@
   }
     ```
 
-- GET `/dealer/<int:dealer_id>/car/<int:car_id>`:
+- GET `/dealer/<int:dealer_id>/car/<int:car_id>` - получить предложения диллера по конкретному автомобилю:
     - Данные: -
     - Возвращаемое значение: 
     ```
@@ -120,7 +120,7 @@
         }
   }
     ```
-- POST `/dealer/<int:dealer_id>/car/<int:car_id>`:
+- POST `/dealer/<int:dealer_id>/car/<int:car_id>` - создать предложение диллера по автомобилю:
     - Данные: 
     ```
   {
@@ -134,7 +134,7 @@
     "success": boolean
   }
     ```
-- DELETE `/dealer/<int:dealer_id>/car/<int:car_id>`:
+- DELETE `/dealer/<int:dealer_id>/car/<int:car_id>` - удалить предложение диллера по автомобилю:
     - Данные: -
 
     - Возвращаемое значение: 
@@ -143,7 +143,7 @@
     "success": boolean
   }
     ```
-- PATCH `/dealer/<int:dealer_id>/car/<int:car_id>`:
+- PATCH `/dealer/<int:dealer_id>/car/<int:car_id>` - изменить количество доступных единиц и/или стоимость автомобиля у диллера:
     - Данные: 
     ```
   {

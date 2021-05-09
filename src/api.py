@@ -1,9 +1,12 @@
+import sys
+print(sys.path)
+#sys.path.append("./")
+print(sys.path)
 from flask import Flask
 from flask_restful import Api
-from src.flask_resources.car import Car
-from src.flask_resources.dealer import Dealer
-from src.flask_resources.dealer_to_car import DealerToCar
-import sqlite3
+from flask_resources.car import Car
+from flask_resources.dealer import Dealer
+from flask_resources.dealer_to_car import DealerToCar
 
 
 class App:

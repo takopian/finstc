@@ -3,7 +3,6 @@ import requests
 BASE = "http://127.0.0.1:5000/"
 
 response = requests.get(BASE + "car/1")
-# response = requests.patch(BASE + "video/2", {})
 print(response.json())
 
 response = requests.get(BASE + "dealer/1")

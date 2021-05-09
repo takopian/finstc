@@ -1,5 +1,5 @@
 from flask_restful import Resource, abort, reqparse
-from src.db import DB
+from db import DB
 
 dealer_to_car_args = reqparse.RequestParser()
 dealer_to_car_args.add_argument("quantity", type=int, help="Quantity of cars", required=True)

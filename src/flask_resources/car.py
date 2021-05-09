@@ -1,5 +1,5 @@
 from flask_restful import Resource, abort, reqparse
-from src.db import DB
+from db import DB
 
 car_args = reqparse.RequestParser()
 car_args.add_argument("name", type=str, help="Name of the car", required=True)
