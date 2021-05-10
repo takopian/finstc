@@ -1,7 +1,3 @@
-import sys
-print(sys.path)
-#sys.path.append("./")
-print(sys.path)
 from flask import Flask
 from flask_restful import Api
 from flask_resources.car import Car
